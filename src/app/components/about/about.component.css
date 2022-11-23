@@ -3,8 +3,9 @@
 
 }
 div{
-    background-color: #888585;
+    background-color: #404040;
     text-align: center;
+    color: #fdfdfd;
 }
 
 @media (min-width: 576px){
@@ -14,7 +15,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px black;
         left: 2%;
-        top: 500px;
+        top: 620px;
     }
 }
 
@@ -25,7 +26,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px black;
         left: 35%;
-        top: 490px;
+        top: 900px;
     }
 }
 
@@ -33,4 +34,5 @@ div{
     font-weight: bold;
     margin-top: 40%;
     margin-left: 5px;
+    color: #fdfdfd;
 }

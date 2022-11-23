@@ -1,12 +1,18 @@
 row{
-    padding:20 px;
+    padding:20px;
 }
 
 div{
-    background:#888585;
-    ;
+    background:#404040;
+    padding-left: 20px;
 }
 
 h1, h3 {
     display: inline;
+    color: #fdfdfd;
+    padding-left: 15px;
+}
+
+table{
+    color: #fdfdfd;
 }

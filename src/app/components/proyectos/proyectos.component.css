@@ -1,10 +1,12 @@
 .row{
     padding: 20px;
-    background-color: #888585;
+    background-color: #404040;
+    color: #fdfdfd;
 }
 
 .contenedor{
     width: auto;
+    color: #fdfdfd;
 
 }
 .parte1{
