@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
 })
 export class SkillService {
 
-  URL = 'https://backend-tp-argentina-programa.herokuapp.com/skill/'
+  URL = 'https://backend-bruji227.koyeb.app/skill/'
 
   constructor(private httpClient: HttpClient) { }
 

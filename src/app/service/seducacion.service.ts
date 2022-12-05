@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class SeducacionService {
-  expURL = 'https://backend-tp-argentina-programa.herokuapp.com/educacion/'
+  expURL = 'https://backend-bruji227.koyeb.app/educacion/'
 
   constructor(private httpClient: HttpClient) { }
 
