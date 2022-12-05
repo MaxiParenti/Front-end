@@ -1,0 +1,64 @@
+[debug] [2022-12-05T05:06:56.622Z] ----------------------------------------------------------------------
+[debug] [2022-12-05T05:06:56.626Z] Command:       E:\PROGRAMACION\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-05T05:06:56.627Z] CLI Version:   11.16.0
+[debug] [2022-12-05T05:06:56.627Z] Platform:      win32
+[debug] [2022-12-05T05:06:56.627Z] Node Version:  v18.9.0
+[debug] [2022-12-05T05:06:56.629Z] Time:          Mon Dec 05 2022 02:06:56 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-12-05T05:06:56.629Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-05T05:06:56.753Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-05T05:06:56.754Z] > authorizing via signed-in user (maximilianoparenti@gmail.com)
+[debug] [2022-12-05T05:06:56.755Z] [iam] checking project frontendmnp for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-05T05:06:56.759Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmnp:testIamPermissions [none]
+[debug] [2022-12-05T05:06:56.759Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmnp:testIamPermissions x-goog-quota-user=projects/frontendmnp
+[debug] [2022-12-05T05:06:56.759Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmnp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-05T05:06:57.671Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmnp:testIamPermissions 200
+[debug] [2022-12-05T05:06:57.672Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontendmnp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-05T05:06:57.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontendmnp [none]
+[debug] [2022-12-05T05:06:58.030Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontendmnp 200
+[debug] [2022-12-05T05:06:58.030Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontendmnp {"projectId":"frontendmnp","projectNumber":"1061328994243","displayName":"frontendmnp","name":"projects/frontendmnp","resources":{"hostingSite":"frontendmnp"},"state":"ACTIVE","etag":"1_7e5cae20-c296-4c53-aa1d-7cc68d76c72d"}
+[info] 
+[info] === Deploying to 'frontendmnp'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-12-05T05:06:58.038Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/frontendmnp/versions [none]
+[debug] [2022-12-05T05:06:58.038Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/frontendmnp/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-12-05T05:06:59.336Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/frontendmnp/versions 200
+[debug] [2022-12-05T05:06:59.336Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/frontendmnp/versions {"name":"projects/1061328994243/sites/frontendmnp/versions/7793c73752e0ec36","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[frontendmnp]: beginning deploy... 
+[info] i  hosting[frontendmnp]: found 26 files in dist\proyecto-integrador 
+[debug] [2022-12-05T05:06:59.354Z] [hosting] uploading with 200 concurrency
+[debug] [2022-12-05T05:06:59.384Z] [hosting] hash cache [ZGlzdFxwcm95ZWN0by1pbnRlZ3JhZG9y] stored for 26 files
+[debug] [2022-12-05T05:06:59.385Z] [hosting][hash queue][FINAL] {"max":23,"min":0,"avg":3.3846153846153846,"active":0,"complete":26,"success":26,"errored":0,"retried":0,"total":26,"elapsed":27}
+[debug] [2022-12-05T05:06:59.385Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1061328994243/sites/frontendmnp/versions/7793c73752e0ec36:populateFiles [none]
+[debug] [2022-12-05T05:06:59.385Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1061328994243/sites/frontendmnp/versions/7793c73752e0ec36:populateFiles {"files":{"/favicon.ico":"2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7","/assets/1.gif":"ea1d33dfc22d7fdbb6b7ed7173e42766d5ea173d85198a3d7ba99ca2411273dd","/assets/1.jpg":"8cf2d600cab6c5b4100ee83f3933c2f88eb35622026e5dc6b8b0265a3e247119","/assets/APLogo.png":"6ff79476d7e1a3d0fa0bb862b21f83dbfcf7a9df27c570c93a7d2da6a486d155","/assets/banner.gif":"93fe9fce386d0d52483e7e403248b268a112425cb2d00ab5d5ffc870165e9458","/assets/banner.jpg":"e9010b742f6544a136cf8d44b5b25a49c11727155602055557c47b10cae684fb","/assets/bannert.jpg":"bc95f249ee438296cc6cfb9eec0793df0854a4649aa6efef5662d480c3840c5e","/assets/CSS.png":"efec2e13c95c5e6954909d590e1232bb502a96e3a6d18ffe67c5ace60e3fb753","/assets/eng.png":"1044fad9c74309ed683ee329123b11e9e9a0081978e9e2e9122ced6573db2678","/assets/facebook.png":"3d6c9fbf82fc0a38594c68aef4ce69704ed1ed5603b358c8598ce31309ed77f9","/assets/git.png":"274df56f1050aa3d4c5f750a6ff4cd7db207a312fa9173268a5714918a8f147c","/assets/github.png":"d6efaed513d18639e2e91a5c638ad8e271417ebde2e8ce53179a029f90bf7584","/assets/grupal.png":"12dcd5a7126e5ba7cdca21d7c164ca15fcd846d3cdda6d860f4d8eddda902b87","/assets/html.png":"d0347633c331cc6fbd525427f58bee8d76353e8ac7065b46548958b128e91fbb","/assets/instagram.png":"c6f5a6d14629928c1059435c393cbe3e29fbbf3df364d735ebf8961c7924e10a","/assets/js.png":"14b60b5b3a039adf051d035aed0bd0c506d4c3a62e4ff24ec09c6b0bf3841130","/assets/linkedin.png":"fa0d583ea7335608e67cae59b41383548963274e78671aafadca2d8f210521a0","/assets/perfil.jpg":"df078f433935b5f788e330f94323ad49fa1ae96e6a12ad903644bf9331dc30aa","/assets/twitter.png":"3f1f4da14db21a71be370421173a568f3a5b46ac6e148abf7adf8d82b67e3b31","/index.html":"82b53a4f01debd1c56bb0d7f6526bb3dd2e2fe0151e4935398358f46db7b1647","/3rdpartylicenses.txt":"fab62faeca16e49a66fe6acc9d4652960e52eabaa8f05e6082eb3c294564d8f2","/runtime.27a624682492fbb0.js":"d40db8f1e82b6578aec6f7039f144dadd2c1f5a898932c2e0ccfe87388d6c7c8","/polyfills.cdf35c0bd4b4b8cb.js":"c2c43863a38c9736b6ecec43f7899eaa2e4e468494d4980723c0d0aaa1cd41b5","/scripts.00c5f0be5184dbde.js":"28d412be1611b87ca2698d1137812f0c549a21cc40ec031383ef40aae0befeff","/styles.fd51ec964200c16d.css":"e7bb494d7fbe7fc8571b38a678d5b2dadad221e501b8938830f561615fc11cc9","/main.ee984eea4ed21df9.js":"bf28ed522246d61fa0420891c0b7808d699ba56edcbbbdb516b8cf0bf2267ff4"}}
+[debug] [2022-12-05T05:07:00.499Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1061328994243/sites/frontendmnp/versions/7793c73752e0ec36:populateFiles 200
+[debug] [2022-12-05T05:07:00.499Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1061328994243/sites/frontendmnp/versions/7793c73752e0ec36:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/frontendmnp/versions/7793c73752e0ec36/files"}
+[debug] [2022-12-05T05:07:00.500Z] [hosting][populate queue][FINAL] {"max":1117,"min":1117,"avg":1117,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1117}
+[debug] [2022-12-05T05:07:00.500Z] [hosting] uploads queued: 0
+[debug] [2022-12-05T05:07:00.500Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1670216820500}
+[info] +  hosting[frontendmnp]: file upload complete 
+[debug] [2022-12-05T05:07:00.503Z] [hosting] deploy completed after 1165ms
+[debug] [2022-12-05T05:07:00.504Z] [
+  {
+    "config": {
+      "public": "dist\\proyecto-integrador",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "frontendmnp"
+    },
+    "version": "projects/1061328994243/sites/frontendmnp/versions/7793c73752e0ec36"
+  }
+]
+[info] i  hosting[frontendmnp]: finalizing version... 
+[debug] [2022-12-05T05:07:00.509Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/frontendmnp/versions/7793c73752e0ec36 updateMask=status%2Cconfig
+[debug] [2022-12-05T05:07:00.509Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/frontendmnp/versions/7793c73752e0ec36 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
